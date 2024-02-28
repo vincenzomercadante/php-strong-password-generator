@@ -1,3 +1,9 @@
+<?php
+
+require_once __DIR__ . "./partials/init.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +25,7 @@
 
         <!-- form -->
         <form method="GET" class="row mb-5">
+            <!-- number that define how long it will be the password -->
             <div class="col-10 ">
                 <input type="number" class="form-control" name="psw-length" id="psw" min="6" max="12"
                     value="<?= $password_length ?? '' ?>">
@@ -27,17 +34,6 @@
                 <input type="submit" value="SEND" class="btn btn-primary">
             </div>
         </form>
-
-        <hr />
-
-        <!-- result title -->
-        <h2 class="text-center text-uppercase mb-5">Password result:</h2>
-
-        <!-- generated password -->
-        <h3>
-            Your password is:
-            <?= $generated_password ?? '' ?>
-        </h3>
     </div>
 </body>
 
