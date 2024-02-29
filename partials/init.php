@@ -17,6 +17,7 @@ if ($form_submit) {
         // redirect to second page
         header('Location: ./result.php');
 
+        // generate password
         $generated_password = generate_password($password_length, $avaiable_characters);
 
         // start session

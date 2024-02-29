@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Generate password from lenght inserted by the user & the avaiable characters array
+ * Generate password from lenght inserted by the user & the available characters array
  * 
  * @param int $length length of the generated password
  * @param array $characters array of avaiable character
